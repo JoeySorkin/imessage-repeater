@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; "
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<meta
+			http-equiv="X-Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>iMessage Repeater - 1.0.0 Producti - Joey Sorkin</title>
+	</head>
+	<body>
+		<h1>iMessage Repeater</h1>
+		<form id="form">
+			<!-- <label for="Recipient">Recipient: </label> -->
+			<input
+				type="text"
+				name="Recipient"
+				id="Recipient"
+				placeholder="Recipient"
+			/><br />
+			<!-- <label for="Message">Message: </label> -->
+			<input
+				type="text"
+				name="Message"
+				id="Message"
+				placeholder="Message"
+			/><br />
+			<!-- <label for="quantity">Repetitions (between 1 and 100):</label> -->
+			<input
+				type="number"
+				id="quantity"
+				name="quantity"
+				min="1"
+				max="1000"
+				placeholder="Repetitions"
+			/><br />
+			<input type="submit" value="Send" />
+		</form>
+		<footer>
+			<span id="date">Joey Sorkin 2020</span
+			><span id="version">Version: 1.0.0</span>
+		</footer>
+		<!-- You can also require other files to run in this process -->
+		<script src="./renderer.js"></script>
+		<script src="./runscript.js"></script>
+	</body>
+</html>

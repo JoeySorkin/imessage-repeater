@@ -1,0 +1,24 @@
+{
+	"name": "message-repeater",
+	"version": "1.0.0",
+	"description": "Spam messages?",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-packager . MessageRepeater && cp icon.icns MessageRepeater-darwin-x64/MessageRepeater.app/Contents/Resources/electron.icns"
+	},
+	"keywords": [
+		"Message Send",
+		"Joey Sorkin",
+		"iMessage"
+	],
+	"author": "Joey Sorkin",
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^9.1.2",
+		"electron-packager": "^15.0.0"
+	},
+	"dependencies": {
+		"node-osascript": "^2.1.0"
+	}
+}
